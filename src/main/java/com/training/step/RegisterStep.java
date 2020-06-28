@@ -15,4 +15,12 @@ public class RegisterStep {
 	public void enter_password_and_confirm_password() throws Throwable {
 		System.out.println("in -> enter password and confirm password");
 	}
+	
+
+@Given("^first name is entered$")
+public void first_name_is_entered() throws Throwable {
+    System.out.println("in -> first name is entered");
+}
+
+
 }

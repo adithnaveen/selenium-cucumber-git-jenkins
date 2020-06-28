@@ -6,3 +6,4 @@ Feature: to register in the site
 Scenario: 
 Given given email
 And enter password and confirm password 
+And first name is entered 
