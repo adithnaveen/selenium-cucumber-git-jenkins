@@ -11,14 +11,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"src/main/resources/com/training/features"},
-		glue = {"com.training.step"}, 
+		glue = {"com.training.step", "com.training.hooks"}, 
 		plugin = {
 					"pretty", 
 					"html:target/cucumber-html-report" , 
 					"json:target/cucumber-json-report"
 				}, 
 		monochrome = true, 
-//		tags = {"@sanity","~@telecom"}
 		tags= {"@register"}
 )
 public class TestRunner  extends AbstractTestNGCucumberTests {
